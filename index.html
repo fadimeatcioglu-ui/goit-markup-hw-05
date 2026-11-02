@@ -42,7 +42,14 @@
       <section class="hero">
         <div class="container">
         <h1>Effective Solutions for Your Business</h1>
-        <button type="button" class="order-service">Order Service</button>
+        <button
+          type="button"
+          class="order-service"
+          aria-haspopup="dialog"
+          aria-controls="contact-modal"
+        >
+          Order Service
+        </button>
         </div>
       </section>
 
@@ -383,8 +390,63 @@
             </a>
           </li>
         </ul>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="subscribe-form">
+            <label>
+              <input type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button type="submit">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
       </div>
     </footer>
+    <div class="backdrop" aria-hidden="true">
+      <div
+        class="modal"
+        id="contact-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button type="button" class="modal-close" aria-label="Close dialog">
+          &times;
+        </button>
+        <p class="modal-title" id="modal-title">
+          leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label>
+            Name
+            <input type="text" name="user-name"/>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="user-phone"/>
+          </label>
+          <label>
+            Email
+            <input type="email" name="user-email"/>
+          </label>
+          <label>
+            Comment
+            <textarea name="user-comment"
+            placeholder="text input"></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="user-privacy" />
+            I accept the terms and conditions of the privacy policy
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js" defer></script>
   </body>
 </html>
