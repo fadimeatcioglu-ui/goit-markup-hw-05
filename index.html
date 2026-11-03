@@ -353,43 +353,46 @@
     </main>
     <footer>
       <div class="container">
-      <a href="./index.html" class="logo">Web<span>Studio</span></a>
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-      <div class="footer-social">
-        <p class="footer-social-title">Social media</p>
-        <ul class="social-links">
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">Web<span>Studio</span></a>
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with digital
+            marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social-title">Social media</p>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="subscribe-form">
@@ -405,7 +408,6 @@
           </form>
         </div>
       </div>
-      </div>
     </footer>
     <div class="backdrop" aria-hidden="true">
       <div
@@ -416,30 +418,47 @@
         aria-labelledby="modal-title"
       >
         <button type="button" class="modal-close" aria-label="Close dialog">
-          &times;
+          <svg width="8" height="8" aria-hidden="true" focusable="false">
+            <path d="m1 1 6 6M7 1 1 7" />
+          </svg>
         </button>
         <p class="modal-title" id="modal-title">
           leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label>
-            Name
-            <input type="text" name="user-name"/>
+          <label class="modal-form-field">
+            <span class="modal-form-label">Name</span>
+            <span class="modal-input-wrap">
+              <svg class="modal-form-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-8 9a8 8 0 0 1 16 0" />
+              </svg>
+              <input type="text" name="user-name" />
+            </span>
           </label>
-          <label>
-            Phone
-            <input type="tel" name="user-phone"/>
+          <label class="modal-form-field">
+            <span class="modal-form-label">Phone</span>
+            <span class="modal-input-wrap">
+              <svg class="modal-form-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <path d="m7 3 2 4-2 2a15 15 0 0 0 6 6l2-2 4 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2h1Z" />
+              </svg>
+              <input type="tel" name="user-phone" />
+            </span>
           </label>
-          <label>
-            Email
-            <input type="email" name="user-email"/>
+          <label class="modal-form-field">
+            <span class="modal-form-label">Email</span>
+            <span class="modal-input-wrap">
+              <svg class="modal-form-icon" width="18" height="18" aria-hidden="true" focusable="false">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+              <input type="email" name="user-email" />
+            </span>
           </label>
-          <label>
-            Comment
-            <textarea name="user-comment"
-            placeholder="text input"></textarea>
+          <label class="modal-form-field">
+            <span class="modal-form-label">Comment</span>
+            <textarea name="user-comment" placeholder="Text input"></textarea>
           </label>
-          <label>
+          <label class="modal-privacy">
             <input type="checkbox" name="user-privacy" />
             I accept the terms and conditions of the privacy policy
           </label>
